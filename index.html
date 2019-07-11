@@ -1,7 +1,458 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+<HTML>
+<HEAD>
+<TITLE>d i r t y m o u s e</TITLE>
+
+
+
+<META  name="description" content="dirtymouse.net - experimental music, soundtracks & other publications">
+<META NAME="keywords" CONTENT="electronic, experimental, dub, soundtrack, glitch, music, macintosh, troubleshooting, australia, scrimshanker, shane, wynter">
+
+
+
+<META NAME="ROBOTS" CONTENT="INDEX,FOLLOW">
+
+
+
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+   
+   
+
+    
+<!--SHOW HIDE -->
+
+
+
+<script type="text/javascript">
+function doHide(clientId) { 
+ document.getElementById(clientId + '_ex').style.display='none'; 
+ document.getElementById('m_'+clientId).style.display='inline'; 
+ return false; 
+}
+function doMore(clientId) { 
+ document.getElementById(clientId + '_ex').style.display='inline'; 
+ document.getElementById('m_'+clientId).style.display='none'; 
+ return false; 
+}
+</script> 
+
+<!--ANTI SPAM-->
+
+
+
+<script>
+			function snaffle(email, inline) {
+				//	v0.3
+				
+				//	array of things to find
+				find = new Array()
+				replace = new Array()
+				
+				find[0] 	= "\\s*\\[\\s*tod\\s*\\]\\s*"
+				replace[0] 	= '.'
+				find[1] 	= "\\s*\\[\\s*ta\\s*\\]\\s*"
+				replace[1] 	= '@'
+			
+				for ( i = 0; i < find.length; i++ ) {
+					eval("regexp = /" + find[i] + "/ig")
+					email = email.replace(regexp, replace[i])
+				}
+				
+				if(inline)
+					return email
+				else {
+					if ( email.indexOf('mailto') < 0 ) 
+						email = 'mailto:'  + email
+					location.href = email
+				}
+			}
+
+
+			function checkEmailForm(that) { 
+				if(that.elements.required.value == '')
+					return false
+		
+				err = new Array()
+				err.length = 0
+				
+				req = that.elements.required.value.split(',')
+		
+				for ( i = 0; i < that.elements.length; i++ )
+					for ( j = 0; j < req.length; j++ )
+						if(that.elements[i].name == req[j])
+							if(that.elements[i].value == '')
+								err[err.length] = req[j]
+				
+				if(validEmail(that.elements.username,'email'))
+					err[err.length] = validEmail(that.elements.username,'email')
+							
+				if( err.length > 0 ) {
+					msg = 'The following fields are required :'
+					for ( i = 0; i < err.length; i++ )
+						msg += '\n - ' + err[i]
+					alert(msg)
+					return false
+				}
+				else
+					that.submit()
+			}
+		
+		
+			emailError = 'email address must be in the form\n   "name@domain.com"'
+		
+		
+			function validEmail(val,valName) {
+				if(!val || (val.value == '') || (val.value == 'your@email.com')) {
+					return false
+				}
+		
+				regexp = /^(\S+)(\@)(\S+)(\.)(\S+)$/ig
+		
+				findarray = regexp.exec(val.value)
+				if(document.layers) window.status = regexp.exec(val.value)		//	ns bug fix
+		
+				if(!findarray)
+					return emailError
+				else
+					return false
+			}
+					
+
+</script>
+
+
+
+
+
+<style>
+
+
+body 		{margin: 10px; padding: 0px; background: #ffffff; text-align: center; font: 12px 'Lucida Grande', Geneva, Arial, Verdana, sans-serif; color: #000000; }
+table, td	{ font-family : 'Lucida Grande', Arial, Helvetica, Sans-serif; font-size : 12px; color : #000000 }
+h1				{ font-family : Arial, Helvetica, Sans-serif; font-size : 24px; color : #000000 }		
+h2				{ font-family : Arial, Helvetica, Sans-serif; font-size : 20px; color : #000000 }		
+h3				{ font-family : Lucida Grande, Arial, Helvetica, Sans-serif; text-decoration : none; font-size : 14px; color : #736F6E  }
+h4				{ font-family : Lucida Grande, Arial, Helvetica, Sans-serif; text-decoration : none; font-size : 16px; color : #ff0000  }
+a:link			{ color: #FF6600; text-decoration: none  }
+a:visited	{ color: #CC6633; text-decoration: none }
+a:hover		{ color: #ff0000; text-decoration: none; border-bottom: 1px dashed #394651 }
+
+	
+a:active		{ color: #ff0000; text-decoration: none }
+
+#float 		{position: fixed; top: 0 px; left: 15 px;}	
+
+
+</style>
+
+</HEAD>
+
+<table border="0" cellpadding="4" cellspacing="1" width="1024">
+
+<tr>
+
+<td valign="top" align="left" width="100">
+
+
+<img src="https://of.io/png/onezumi.png" width="100" align="left">
+
+
+
+<BR CLEAR="ALL">
+<img src="https://of.io/elements/paraanim.gif" width="50" height="750" align="left">
+
+
+
+</td>
+
+
+<td valign="top" align="left" width="1">
+<img src="https://of.io/elements/line.gif" width=1 height=99%>
+</td>
+
+
+<td valign="top" align="left" width="280">
+				
+
+
+<h2>360&deg; Photography & Video</h2>
+<HR SIZE=1 NOSHADE WIDTH=280 ALIGN=left>
+I'm exploring Ireland's West Coast wild landscape through 360&deg; Photography, Video and Time Lapse. I'm also available for Google Street View, Site Documentation, Project Events, Location Scouting & VR commissions. 
+<P>
+    
+
+<img src="https://of.io/elements/dirtymouse-360-portrait.jpg" alt="dirtymouse" width="280" height="74">
+<p>
+
+    
+ <P>
+<LI> Google Street View 360&deg; <a href="https://www.google.com/maps/contrib/104024213918909681733/photos/data=!4m3!8m2!3m1!1e1" target="_blank">Photography</a><BR>
+<LI> 360&deg; <a href="http://360.of.io" target="_blank"> Photography</a> (modern desktop GPU)<BR>
+<LI> Vimeo 360&deg; Re-framed Video <a href="https://vimeo.com/album/5346874" target="_blank">Overcaptures</a><BR>   
+<LI> Pond5 360&deg; Stock Video <a href="https://www.pond5.com/collections/2404712-360-video" target="_blank">Collection</a><BR> 
+<LI> VideoBlocks 360&deg; Stock Video <a href="https://www.videoblocks.com/portfolio/dirtymouse" target="_blank">Collection</a><BR>   
+<LI> Shutterstock HD Video <a href="https://www.shutterstock.com/video/search?contributor=dirtymouse" target="_blank">Collection</a>
+
+
+
+    <p>
+<B>For more information:</B>   <P>  
+   
+<a href='javascript:snaffle("82 [ta] of [tod] io?subject=360 video enquiry")'><span style="font-size: 28px; color: grey;" class="fas fa-envelope"></span> &nbsp;</a>     
+<a href="https://keybase.io/encrypt#dirtymouse" target="_blank"> <span style="font-size: 28px; color: grey;" class="fab fa-keybase"></span> &nbsp;</a>
+<a href="facetime://+353899810201?audio=yes"> <span style="font-size: 28px; color: grey;" class="fas fa-microphone"></span> &nbsp;</a> 
+<a href="tel:+353899810201"><span style="font-size: 28px; color: grey;" class="fas fa-phone-square"></span> &nbsp;</a> 
+<a href="https://wa.me/353899810201" target="_blank"><span style="font-size: 28px; color: grey;" class="fab fa-whatsapp-square"></span></a>
+    
+    
+<BR><BR>   
+    
+<h2>Stock Photography</h2>
+<HR SIZE=1 NOSHADE WIDTH=280 ALIGN=left>
+<P>
+<img src="https://of.io/elements/flickr-preview.jpg" alt="dirtymouse" width="280">
+<LI> Shutterstock <a href="http://shutterstock.com/g/dirtymouse" target="_blank">Profile</a> <BR>
+<LI> Pond5 <a href="https://www.pond5.com/artist/dirtymouse" target="_blank">Media Collection</a><BR> 
+<LI> StoryBlocks Image <a href="https://www.storyblocks.com/portfolio/dirtymouse" target="_blank">Collection</a><BR>  
+<LI> iStock <a href="http://www.istock.com/portfolio/dirtymouse" target="_blank">Profile</a><BR>
+<P>
+<h2>Personal Photography</h2>
+<HR SIZE=1 NOSHADE WIDTH=280 ALIGN=left>
+<P>
+Selects: <a href="http://of.io/everything/" target="_blank">Flickr </a> (2002-2019)<BR>
+Ancient: <a href="http://fosh.dirtymouse.net" target="_blank">fosh website</a> (2002-2005)<BR>
+<P>
+<table>
+
+<tr><td valign="top" align="left" width="260">
+<img src="http://farm1.static.flickr.com/130/382666363_946e3c90c6_s.jpg" align="left" border="1" width="75" height="75" alt="">
+<img src="http://farm1.static.flickr.com/35/71741307_c488f7c33a_s.jpg" align="left"  border="1" width="75" height="75" alt="">
+<img src="http://farm1.static.flickr.com/37/78720715_cad1390762_s.jpg" align="left" border="1"  width="75" height="75" alt="">
+</td></tr>
+<tr><td valign="top" align="left" width="260">
+<img src="http://farm1.static.flickr.com/226/467874878_4afa66ec41_s.jpg" align="left" border="1" width="75" height="75" alt="">
+<img src="http://farm3.staticflickr.com/2484/3635121288_0b1e227534_s.jpg" align="left"  border="1" width="75" height="75" alt="">
+<img src="http://farm1.static.flickr.com/137/386480851_7c86b1f715_s.jpg" align="left" border="1"  width="75" height="75" alt="">
+</td></tr>
+
+</table>
+<P>
+
+<h2>Collected from Elsewhere</h2>
+<HR SIZE=1 NOSHADE WIDTH=280 ALIGN=left>
+<a href="http://of.io/photos" target="_blank">Photos</a> | <a href="http://of.io/graphic" target="_blank">Graphic</a> | <a href="http://of.io/houses" target="_blank">Houses</a><BR>
+
+<P>
+<table>
+<tr><td valign="top" align="left" width="260">
+<a href="http://of.io/photos" target="_blank"><img src="https://of.io/elements/photo1.jpg" align="left" border="1" width="75" height="75" alt=""></a>
+<a href="http://of.io/photos" target="_blank"><img src="https://of.io/elements/photo2.jpg" align="left"  border="1" width="75" height="75" alt=""></a>
+<a href="http://of.io/photos" target="_blank"><img src="https://of.io/elements/photo3.jpg" align="left" border="1"  width="75" height="75" alt=""></a>
+</td></tr>
+
+<tr><td valign="top" align="left" width="260">
+<a href="http://of.io/graphic" target="_blank"><img src="https://of.io/elements/graphic1.jpg" align="left" border="1" width="75" height="75" alt=""></a>
+<a href="http://of.io/graphic" target="_blank"><img src="https://of.io/elements/graphic2.jpg" align="left"  border="1" width="75" height="75" alt=""></a>
+<a href="http://of.io/graphic" target="_blank"><img src="https://of.io/elements/graphic3.jpg" align="left" border="1"  width="75" height="75" alt=""></a>
+</td></tr>
+
+</table>
+<P>
+
+
+</td>
+
+
+
+
+
+
+</td>
+
+
+<td valign="top" align="left" width="1">
+<img src="https://of.io/elements/line.gif" width=1 height=99%>
+</td>
+
+<td valign="top" align="left" width="280">
+
+<h2>Apple Mac OS Support</h2>
+<HR SIZE=1 NOSHADE WIDTH=280 ALIGN=left>
+<p>
+<img src="https://of.io/png/sad-mac.png" alt="mac_support" width="160">
+<p>
+
+<B>Remote or onsite <a href="http://help.of.io/" target="_blank"> Mac Support</a></B> <BR>
+    in Dublin, Limerick, Clare, Cork, Galway. 
+<p>
+    
+<b>Managed File & Network Services</b><br>
+I design, build and manage <a href="http://film.of.io/" target="_blank">Portable Art Department File Servers 
+for Feature Film Production</a>, Studios, Projects & Events.
+<P>
+<img src="http://film.of.io/assets/images/dm_images/file-server_SWG_front_view.png" style="opacity:0.75;" alt="server" width="240">
+<P>
+
+ 
+ <P>
+<b>Managed Service Provider</b><br>
+Secure European based account hosting for calendars, contacts, unlimited capacity IMAP mail and webmail (including malware and spam filtering) with
+'Over the Air' account setup for iOS/OSX devices. Full Domain name registration & management available.
+<P>
+
+<b>For more information:</b><p>
+
+    
+<a href="http://help.of.io/" target="_blank"><span style="font-size: 28px; color: grey;" class="fas fa-medkit"></span> &nbsp;</a>    
+<a href="http://film.of.io/" target="_blank"><span style="font-size: 28px; color: grey;" class="fas fa-film"></span> &nbsp;</a>
+<a href='javascript:snaffle("dns [ta] of [tod] io?subject=Mac Support Services")'><span style="font-size: 28px; color: grey;" class="fas fa-envelope"></span> &nbsp;</a>     
+<a href="https://keybase.io/encrypt#dirtymouse" target="_blank"> <span style="font-size: 28px; color: grey;" class="fab fa-keybase"></span> &nbsp;</a>
+<a href="https://www.linkedin.com/in/dirtymouse/" target="_blank"> <span style="font-size: 28px; color: grey;" class="fab fa-linkedin"></span> &nbsp;</a> 
+<a href="https://www.imdb.com/name/nm2911504/?ref_=fn_al_nm_1" target="_blank"><span style="font-size: 28px; color: grey;" class="fab fa-imdb"></span></a>
+<BR><BR>
+
+<P>
+<h2>Troubledmac PDF guide</h2>
+<HR SIZE=1 NOSHADE WIDTH=280 ALIGN=left>
+<img src="https://of.io/t-mac/fatm_logo.jpg" alt="troubedmac" width="118" height="51">
+
+<P>
+Mac OS X troubleshooting guide (PDF) for managing a network of Macs in a production environment.
+<P>
+
+<B>Final Version <FONT COLOR="#ff0000">2.4.0</font></B><BR>
+Publication Issue No: 22 <BR>
+Final Release Date: 18-Feb-2010 <BR>
+OS X Version: < 10.6.8<BR>
+A4 Pages: 223 PDF  <BR>
+Size: 25.8mb<P>
+				
+<a href="https://www.dropbox.com/s/bgsloksa645ire3/t-mac_2.4.0.pdf?dl=1"><img src="https://of.io/t-mac/free_download.jpg" alt="" width="150"></a>
+	
+	<P>
+
+   
+
+
+<td valign="top" align="left" width="1">
+<img src="https://of.io/elements/line.gif" width=1 height=99%>
+</td>
+
+<td valign="top" align="left" width="280">
+
+
+
+<h2>Scrimshanker </h2>
+<HR SIZE=1 NOSHADE WIDTH=280 ALIGN=left>
+Full Album is Available on SoundCloud at: <a href="https://soundcloud.com/dirtym0use" target="_blank">https://soundcloud.com/dirtym0use</a> <P>
+OR
+available directly from:<BR> 
+<a href="http://of.io/scrimshanker" target="_blank">http://of.io/scrimshanker</a><P>
+<img src="https://of.io/elements/scrimshanker.jpg" WIDTH=251 HEIGHT=167 border=0>
+<P>
+
+
+Experimental electronic music soundtrack(s) derived from induction coil recordings, 
+radio device interference, granular synthesis & percussive samples. 
+Hybrid <a href="http://en.wikipedia.org/wiki/Glitch_(music)" target="_blank">Glitch</a> with ambient sounds.
+<P>
+Created on an ancient Powerbook using Protools, Supercollider, Arboretum Hyperprism, Rebirth, VSamp, Nord Micro,
+Midi Signals, SR-16, Midiverb. Circa 1999.
+<P>
+<UL>
+<LI> <A HREF="mpg/scrimshanker/teotwawki.mp3" TARGET="_blank">teotwawki.mp3</A> - 5.1mb <BR>
+<LI> <A HREF="mpg/scrimshanker/replicant.mp3" TARGET="_blank">replicant.mp3</A> - 1.5mb <BR>
+<LI> <A HREF="mpg/scrimshanker/defragenburn.mp3" TARGET="_blank">defragenburn.mp3</A> - 2.6mb <BR>
+<LI> <a href="http://dirtymouse.net/mpg/scrimshanker/worker&parasite.mp3">worker&amp;parasite.mp3*</a> - 4.8mb<BR>
+<LI> <A HREF="mpg/scrimshanker/thumbscum.mp3" TARGET="_blank">thumbscum.mp3</A> - 3.2mb <BR>
+<LI> <A HREF="mpg/scrimshanker/floobydust_awakes.mp3" TARGET="_blank">floobydust_awakes.mp3</A> - 2.5mb <BR>
+<LI> <A HREF="mpg/scrimshanker/microburst.mp3" TARGET="_blank">microburst.mp3</A> - 3.9mb <BR>
+<LI> <A HREF="mpg/scrimshanker/smallpacket.mp3" TARGET="_blank">smallpacket.mp3</A> - 2.1mb <BR>
+<LI> <A HREF="mpg/scrimshanker/chickenwater.mp3" TARGET="_blank">chickenwater.mp3</A> - 1.6mb <BR>
+<LI> <A HREF="mpg/scrimshanker/travelfat.mp3" TARGET="_blank">travelfat.mp3</A> - 1.6mb <BR>
+<LI> <A HREF="mpg/scrimshanker/seismic_dub.mp3" TARGET="_blank">seismic_dub.mp3</A> - 7.6mb <BR>
+<LI> <A HREF="mpg/scrimshanker/glok.mp3" TARGET="_blank">glok.mp3</A> - 2.7mb <BR>
+</UL>
+* <A HREF="https://www.clananalogue.org/releases/ca025-cognition-three-various-artists/" TARGET="_blank">Clan Analogue</A>: <B>cognition</B>/three
+<P>
+<B>all mpeg audio works are <BR>
+&copy; 1996-2001 by dirtymouse</B>
+<P>
+
+<HR SIZE=1 NOSHADE WIDTH=280 ALIGN=left>
+
+<P>
+<B>permission is required</A></B> if you wish to
+perform these by any wired or wireless broadcast method.
+permission is also required for any replication via
+spinning disk, magnetic tape, solid state memory or
+any hybrid of aforementioned technologies.</font>
+<P>
+
+    
+<h2>dirtymouse </h2>
+<HR SIZE=1 NOSHADE WIDTH=280 ALIGN=left>
+
+Established in 1995, <a href="http://web.archive.org/web/*/http://dirtymouse.net" target="_blank">first archived</a> in 1998.
+Thanks for dropping by...
+
+<P>
+<img src="https://of.io/elements/dirtymouse.gif"  style="opacity:0.75;" width="251" border=0>
+<P>
+
+
+<h2>emg (electric.media.group)</h2>
+<HR SIZE=1 NOSHADE WIDTH=280 ALIGN=left>
+data storage space of the now defunct electric.media.group (<a href="#" id="m_emg_OnOff" onClick="return doMore('emg_OnOff')">List contents</a>).
+
+<div style="display:none" id="emg_OnOff_ex">
+
+<UL>
+<LI><A HREF="toydeath/index.htm" target="_blank"> Toydeath Sound Interactives <BR>(1997-2001)</A><BR>
+<LI><A HREF="emg/area51/index.htm" target="_blank">Area51 Interactive Soundwork</A><BR>
+<LI><A HREF="emg/surveillance/index.htm" target="_blank"> In the Event of Amnesia <BR>by Denis Beaubois (1996-1998)</A><BR>
+<LI><A HREF="emg/seismic.htm" target="_blank"> Seismic Project <BR>by D.V. Rogers (1997-2000)</A><BR>
+<LI><A HREF="emg/swizelstik/index.htm" target="_blank">Swizelstik - Madame Butterfly & Previous..</A><BR>
+<LI><A HREF="emg/splaylunch.htm" target="_blank">Splaylunch - the animated spread</A><BR>
+<LI><A HREF="emg/text.htm" target="_blank">text.txt by Richard Gracie</A><BR>
+<LI><A HREF="emg/snowdrops.htm" target="_blank">42SnowDrops <BR>by J&uuml;stine Poplin</A><BR>
+<LI><A HREF="emg/visible.htm" target="_blank">Visible Rabbit Project <BR>by dirtymouse 1996</A><BR>
+<LI><A HREF="emg/specimen.htm" target="_blank">Specimen Performance -1996</A><BR>
+<LI><A HREF="emg/demoball.htm" target="_blank">Demonstrators Ball -1995</A><BR>
+</UL>
+ <a href="#" onClick="return doHide('emg_OnOff')">Click me to shrink above list</a>
+</div>
+
+<P>
+
+    
+</td>
+
+
+
+
+<td valign="top" align="left" width="1">
+<img src="https://of.io/elements/line.gif" width=1 height=99%>
+</td>
+
+
+</tr>
+
+
+
+</table>
+
+<!--INTERCOM-->
+
+ <script>
+  window.intercomSettings = {
+    app_id: "lw507hvm"
+  };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/lw507hvm';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+
+    
+
+</BODY>
+</HTML>
